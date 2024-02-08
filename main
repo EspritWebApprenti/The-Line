@@ -1,0 +1,66 @@
+const sous_tableau = document.querySelectorAll('.sous_tableau');
+const tableau = document.querySelectorAll('.tableau');
+const text_header = document.querySelector('.text_header');
+const texte = document.querySelectorAll('.texte');
+const texte_apparition = document.querySelectorAll('.texte_apparition');
+
+tableau.forEach(function(event) {
+    event.addEventListener('mouseover', function() {
+
+        sous_tableau.forEach(function(st_event) {
+            st_event.classList.add('active');
+        });
+
+        texte.forEach(function(t_event) {
+            t_event.classList.add('active');
+        });
+
+        texte_apparition.forEach(function(apparition_event) {
+            apparition_event.classList.add('active');
+        });
+
+
+        text_header.classList.add('active');
+
+
+
+
+    sous_tableau.forEach(function(other_sous_tableau) {
+        if (!event.contains(other_sous_tableau)) {
+            other_sous_tableau.classList.add('other_active');
+        }
+    });
+
+    texte.forEach(function(other_texte) {
+        if (!event.contains(other_texte)) {
+            other_texte.classList.add('other_active');
+        }
+    });
+
+    texte_apparition.forEach(function(other_apparition) {
+        if (!event.contains(other_apparition)) {
+            other_apparition.classList.add('other_active');
+        }
+    });
+});
+
+
+
+    event.addEventListener('mouseout', function() {
+
+        sous_tableau.forEach(function(st_event) {
+            st_event.classList.remove('active', 'other_active');
+        });
+
+        texte.forEach(function(t_event) {
+            t_event.classList.remove('active', 'other_active');
+        });
+
+        texte_apparition.forEach(function(apparition_event) {
+            apparition_event.classList.remove('active', 'other_active');
+        });
+
+        text_header.classList.remove('active');
+
+    });
+});
