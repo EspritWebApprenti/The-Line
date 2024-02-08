@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Line</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav></nav>
+    <section>
+        <div class="text_header">
+            <h2>Une révolution de la</h2>
+            <h2>Civilisation</h2>
+        </div>
+
+        <ul>
+            <div class="tableau tableau1">
+                <div class="sous_tableau">
+                    <div class="img">
+                        <img class="image_general" src="gauche.webp" alt="">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p class="header_textes">Un accès unique à la nature</p>
+                </div>
+                <div class="texte_apparition">
+                    <p class="small_texte">De par sa conception, THE LINE offre un accès immédiat et continu à la nature en deux minutes de marche grâce à sa grande diversité d’espaces ouverts suspendus sur plusieurs niveaux. Un accès universel à des vues imprenables sur le paysage naturel environnant, les montagnes et le ciel, sans l’expansion urbaine grâce à une empreinte réduite des infrastructures.</p>
+                </div>
+            </div>
+            <div class="tableau tableau2">
+                <div class="sous_tableau">
+                    <div class="img">
+                        <img class="image_general" src="milieu gauche.webp" alt="">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p class="header_textes">De l'air pur pour tous</p>
+                </div>
+                <div class="texte_apparition">
+                    <p class="small_texte">La ville ne produira aucun carbone, grâce à l’élimination des infrastructures à forte intensité de carbone comme les voitures et les routes. Elle fonctionnera avec 100 % d’énergies renouvelables, y compris pour les activités de ses industries. L’intégration de la nature et d’espaces ouverts dans toute la ville jouera un rôle important dans la purification de la qualité de l’air.</p>
+                </div>
+            </div>
+            <div class="tableau tableau3">
+                <div class="sous_tableau">
+                    <div class="img">
+                        <img class="image_general" src="milieu droit.webp" alt="">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p class="header_textes">Plus de temps avec ses proches</p>
+                </div>
+                <div class="texte_apparition">
+                    <p class="small_texte">Tout sera accessible en cinq minutes à pied et un réseau de transports publics efficace offrira un trajet de bout en bout en seulement 20 minutes. Les services automatisés seront optimisés par l’intelligence artificielle. Grâce à la proximité des commodités, les habitants de THE LINE pourront souvent et spontanément voir leur famille et leurs amis.</p>
+                </div>
+            </div>
+            <div class="tableau tableau4">
+                <div class="sous_tableau">
+                    <div class="img">
+                        <img class="image_general" src="droit.webp" alt="">
+                    </div>
+                </div><div class="texte">
+                    <p class="header_textes">Un climat idéal toute l'année</p>
+                </div>
+                <div class="texte_apparition">
+                    <p class="small_texte">Pour garantir la présence d’espaces microclimatiques, l’environnement a été soigneusement conçu pour favoriser un équilibre optimal entre la lumière du soleil, l’ombre et la ventilation naturelle. En outre, les espaces verts ouverts répartis dans la ville amélioreront davantage le confort des personnes qui y vivent, y travaillent et y séjournent.</p>
+                </div>
+            </div>
+        </ul>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
