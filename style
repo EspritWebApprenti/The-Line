@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    background-color: #1d1f22;
+    height: 140px;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: #1d1f22;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.tableau {
+    height: 100%;
+    position: relative;
+    width: 25%;
+    transition: width .8s cubic-bezier(.19,1,.22,1);
+}
+
+.tableau:hover {
+    width: 40%;
+    transition-delay: 0.2s;
+}
+
+.sous_tableau {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0.4;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.image_general {
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.text_header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 70px;
+    opacity: 1;
+    color: white;
+    z-index: 1;
+    letter-spacing: 3px;
+    pointer-events: none;
+    transition: opacity .4s cubic-bezier(.215,.61,.355,1);
+}
+.text_header.active {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.sous_tableau.active {
+    opacity: 0.5;
+}
+
+.sous_tableau.other_active {
+    opacity: 0.2;
+}
+
+
+
+
+
+
+.texte {
+    position: absolute;
+    top: 32px;
+    left: 31px;
+    border-left: solid 3px #ebc03f;
+    min-height: 90px;
+    opacity: 1;
+    transition: 0.4s cubic-bezier(.215,.61,.355,1);
+    pointer-events: none;
+}
+
+.header_textes {
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    max-width: 250px;
+    padding-left: 20px;
+}
+
+.texte.active {
+    opacity: 1;
+}
+
+.texte.other_active {
+    opacity: 0;
+}
+
+.texte_apparition {
+    position: absolute;
+    top: 190px;
+    color: white;
+    left: 31px;
+    transition: opacity 0.5s cubic-bezier(.215,.61,.355,1), transform 0.7s cubic-bezier(.215,.61,.355,1);
+    padding-right: 45px;
+    line-height: 25px;
+    opacity: 0;
+}
+
+.texte_apparition.active {
+    opacity: 1;
+    transition-delay: 0.6s;
+    transform: translateY(-30px);
+}
+
+.texte_apparition.other_active {
+    opacity: 0;
+    transition-delay: 0s;
+    transform: translateY(0px);
+}
